@@ -1,0 +1,80 @@
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+    padding: 20px;
+}
+
+.title {
+    font-weight: normal;
+    border: 1px solid red;
+}
+
+.red {
+    color: red;
+    font-family: cursive;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.kaitlente {
+    display: grid;
+    float: left;
+    margin: 20px;
+    border: 1px solid #ccc;
+}
+.kaitlente > .top {
+    display: inline-block;
+}
+.kaitlente > .top > .skyle {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: 2px solid #999;
+    background-color: #ccc;
+    border-radius: 50%;
+    transition: all 3s;
+}
+.kaitlente > .top > .skyle.karsta {
+    background-color: #f33;
+}
+.kaitlente > .bottom {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 20px;
+}
+.kaitlente > .bottom > .jungiklis {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    border-radius: 0 50% 50% 50%;
+    background-color: #ccc;
+    position: relative;
+    transition: all 0.5s;
+}
+/* .kaitlente > .bottom > .jungiklis::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 50%;
+    background-color: #333;
+} */
+.kaitlente > .bottom > .jungiklis.ijungtas {
+    /* transform: rotate(180deg); */
+    transform: rotate(90deg);
+}
